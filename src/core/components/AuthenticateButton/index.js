@@ -73,6 +73,7 @@ export class AuthenticateButtonBase extends React.Component<Props> {
         href={`#${isAuthenticated ? 'logout' : 'login'}`}
         className={className}
         onClick={this.onClick}
+        type="none"
       >
         {noIcon ? null : <Icon name="user-dark" />}
         {buttonText}
